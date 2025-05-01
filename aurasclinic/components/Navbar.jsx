@@ -13,8 +13,12 @@ const Navbar = () => {
         <>
         {/* Main Navbar */}
         <nav className="fixed top-0 left-0 w-full bg-white shadow-2xl z-50">
-          <div className="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
-            <h1 className="text-xl font-bold text-blue-500">AURA'S CLINIC</h1>
+          <div className="max-w-6xl mx-auto px-4 py-2 flex justify-between items-center">
+            {/* <h1 className="text-xl font-bold text-blue-500">AURA'S CLINIC</h1> */}
+            <div className='w-[200px] h-full '>
+            <img src="/logo.png" alt="" className='w-full '/>
+
+            </div>
 
             {/* Desktop Menu */}
             <div className="space-x-6 hidden md:flex items-center">
@@ -35,10 +39,10 @@ const Navbar = () => {
         {/* Sidebar Menu */}
         <div className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
           <div className="p-6 mt-20 space-y-6 text-center">
-            <a onClick={toggleMenu} href="#home" className="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
-            <a onClick={toggleMenu} href="#about" className="block text-gray-700 hover:text-blue-600 font-medium">About</a>
-            <a onClick={toggleMenu} href="#services" className="block text-gray-700 hover:text-blue-600 font-medium">Services</a>
-            <a onClick={toggleMenu} href="#contact" className="block text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+            <a onClick={toggleMenu} href="#home" className="block text-gray-700 hover:text-blue-500 duration-300 ease-in-out font-medium">Home</a>
+            <a onClick={toggleMenu} href="#about" className="block text-gray-700 hover:text-blue-500 duration-300 ease-in-out font-medium">About</a>
+            <a onClick={toggleMenu} href="#services" className="block text-gray-700 hover:text-blue-500 duration-300 ease-in-out font-medium">Services</a>
+            <a onClick={toggleMenu} href="#contact" className="block text-gray-700 hover:text-blue-500 duration-300 ease-in-out font-medium">Contact</a>
             <a onClick={toggleMenu} href="tel:+919326219059" className='inline-block px-5 py-3 rounded-[90px] bg-red-500 text-white border-2 hover:bg-white hover:text-red-500 hover:border-red-500 duration-300 ease-in-out uppercase font-bold'>Emergency</a>
           </div>
         </div>

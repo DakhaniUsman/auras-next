@@ -1,16 +1,21 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import HeroSlider from "@/components/HeroSlider";
+import QuickService from "@/components/QuickService";
+
+
 
 export default function Home() {
-  return (
+  return ( 
     <>
         <Navbar />
         <main className="w-full min-h-[100vh] relative mt-5">
-            <Hero/>
+            {/* <HeroText/> */}
+            <HeroSlider />
+            <QuickService />
             <About />
             <Services />
             <Contact />
